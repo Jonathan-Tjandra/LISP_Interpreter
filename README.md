@@ -26,7 +26,7 @@ All you need is Python 3.x installed on your machine.
 
 1.  Clone the repository:
     ```sh
-    git clone [https://github.com/Jonathan-Tjandra/LISP_Interpreter.git](https://github.com/Jonathan-Tjandra/LISP_Interpreter.git)
+    git clone https://github.com/Jonathan-Tjandra/LISP_Interpreter.git
     ```
 2.  Navigate to the project directory:
     ```sh
