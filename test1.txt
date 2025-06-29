@@ -1,0 +1,24 @@
+(
+  define (reduce func l st)
+  (
+    if (equal? l ())
+    st
+      (
+        if (equal? (cdr l) ())
+        (func st (car l))
+        (reduce func (cdr l) (func st (car l)) )
+      )
+  )
+     
+)
+(define x (list 1 2 3 4))
+(define y 10)
+(define (add u v) (- u v))
+(reduce add x y)
+
+(
+    (
+        (lambda (a) (lambda (b) (del b))) 9
+        ) 
+        12
+)

@@ -1,0 +1,8 @@
+; Example with comment
+(define (reduce func l st) ; reduce function
+  (if (equal? l ())
+      st
+      (if (equal? (cdr l) ())
+          (func st (car l))
+          (reduce func (cdr l) (func st (car l))))))
+(reduce + (list 1 2 3 4 5) 0) ; Returns 15
